@@ -11,7 +11,7 @@
 
 / {
     keymap {
-        compatible = "zmk,keymap,backlight";
+        compatible = "zmk,keymap";
 
         Base {
             // -----------------------------------------------------------------------------------------
