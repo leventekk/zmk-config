@@ -7,7 +7,7 @@ manifest:
   projects:
     - name: zmk
       remote: zmkfirmware-infused-kim
-      revision: aa-my-customizations-z3
+      revision: v2.5.0+zmk-fixes+kim-fixes
       import: app/west.yml
   self:
     path: config
