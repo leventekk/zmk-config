@@ -31,11 +31,6 @@
   combos {
     compatible = "zmk,combos";
 
-    tab {
-      bindings = <&trans>;
-      key-positions = <2 3>;
-    };
-
     caps_word {
       bindings = <&caps_word>;
       key-positions = <17 18>;
@@ -51,8 +46,8 @@
       key-positions = <19 20>;
     };
 
-    new_combo {
-      bindings = <&kp DEL>;
+    delete_alt {
+      bindings = <&kp DELETE>;
       key-positions = <24 11>;
     };
   };
