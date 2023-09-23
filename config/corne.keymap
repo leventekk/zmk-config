@@ -50,6 +50,11 @@
       bindings = <&kp DELETE>;
       key-positions = <24 11>;
     };
+
+    backtick {
+      bindings = <&kp GRAVE>;
+      key-positions = <19 20 40>;
+    };
   };
 
   keymap {
@@ -76,7 +81,7 @@
     lower {
       bindings = <
 &trans  &kp EXCL  &kp AT  &kp HASH      &kp DLLR  &kp PRCNT    &kp CARET  &kp AMPS   &kp KP_MULTIPLY  &kp LPAR  &kp RPAR  &trans
-&trans  &trans    &trans  &trans        &trans    &trans       &kp MINUS  &kp EQUAL  &kp LBKT         &kp RBKT  &kp BSLH  &trans
+&trans  &trans    &trans  &trans        &trans    &trans       &kp MINUS  &kp EQUAL  &kp LBKT         &kp RBKT  &kp BSLH  &kp GRAVE
 &trans  &trans    &trans  &trans        &trans    &trans       &kp UNDER  &kp PLUS   &kp LBRC         &kp RBRC  &kp PIPE  &kp TILDE
                           &kp LEFT_GUI  &mo 3     &kp SPACE    &kp ENTER  &trans     &kp RIGHT_ALT
       >;
