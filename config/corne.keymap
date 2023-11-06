@@ -55,6 +55,27 @@
     };
   };
 
+  macros {
+    screenshot: screenshot {
+      compatible = "zmk,behavior-macro";
+      #binding-cells = <0>;
+      bindings = <&kp LGUI &kp LSHIFT &kp NUMBER_4>;
+      label = "SCREENSHOT";
+    };
+    next_desktop: next_desktop {
+      compatible = "zmk,behavior-macro";
+      #binding-cells = <0>;
+      bindings = <&kp LCTRL &kp RIGHT_ARROW>;
+      label = "NEXT_DESKTOP";
+    };
+    prev_desktop: prev_desktop {
+      compatible = "zmk,behavior-macro";
+      #binding-cells = <0>;
+      bindings = <&kp LCTRL &kp LEFT_ARROW>;
+      label = "PREV_DESKTOP";
+    };
+  };
+
   keymap {
     compatible = "zmk,keymap";
 
@@ -78,10 +99,10 @@
 
     lower {
       bindings = <
-&kp ESC    &kp EXCL  &kp AT  &kp HASH      &kp DLLR  &kp PRCNT    &kp CARET  &kp AMPS   &kp KP_MULTIPLY  &kp LPAR  &kp RPAR  &trans
-&kp LCTRL  &trans    &trans  &trans        &trans    &trans       &kp MINUS  &kp EQUAL  &kp LBKT         &kp RBKT  &kp BSLH  &kp GRAVE
-&kp LALT   &trans    &trans  &trans        &trans    &trans       &kp UNDER  &kp PLUS   &kp LBRC         &kp RBRC  &kp PIPE  &kp TILDE
-                             &kp LEFT_GUI  &mo 3     &kp SPACE    &kp ENTER  &trans     &kp RIGHT_ALT
+&kp ESC    &kp EXCL       &kp AT         &kp HASH      &kp DLLR  &kp PRCNT    &kp CARET  &kp AMPS   &kp KP_MULTIPLY  &kp LPAR  &kp RPAR  &trans
+&kp LCTRL  &prev_desktop  &next_desktop  &trans        &trans    &trans       &kp MINUS  &kp EQUAL  &kp LBKT         &kp RBKT  &kp BSLH  &kp GRAVE
+&kp LALT   &screenshot    &trans         &trans        &trans    &trans       &kp UNDER  &kp PLUS   &kp LBRC         &kp RBRC  &kp PIPE  &kp TILDE
+                                         &kp LEFT_GUI  &mo 3     &kp SPACE    &kp ENTER  &trans     &kp RIGHT_ALT
       >;
     };
 
