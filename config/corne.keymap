@@ -22,9 +22,7 @@
       tapping-term-ms = <150>;
       quick-tap-ms = <0>;
       flavor = "tap-preferred";
-      bindings =
-        <&kp>,
-        <&kp>;
+      bindings = <&kp>, <&kp>;
     };
   };
 
@@ -71,19 +69,19 @@
 
     raise {
       bindings = <
-&trans  &kp N1    &kp N2      &kp N3        &kp N4        &kp N5          &kp N6          &kp N7          &kp N8         &kp N9           &kp N0  &trans
-&trans  &kp K_PP  &kp K_PREV  &kp K_NEXT    &kp K_VOL_DN  &kp K_VOL_UP    &kp LEFT_ARROW  &kp DOWN_ARROW  &kp UP_ARROW   &kp RIGHT_ARROW  &trans  &trans
-&trans  &trans    &trans      &trans        &trans        &trans          &kp HOME        &kp PG_DN       &kp PG_UP      &kp END          &trans  &trans
-                              &kp LEFT_GUI  &trans        &kp SPACE       &kp ENTER       &mo 3           &kp RIGHT_ALT
+&kp ESC           &kp N1    &kp N2      &kp N3        &kp N4        &kp N5          &kp N6          &kp N7          &kp N8         &kp N9           &kp N0  &trans
+&kp LEFT_CONTROL  &kp K_PP  &kp K_PREV  &kp K_NEXT    &kp K_VOL_DN  &kp K_VOL_UP    &kp LEFT_ARROW  &kp DOWN_ARROW  &kp UP_ARROW   &kp RIGHT_ARROW  &trans  &trans
+&kp LEFT_ALT      &trans    &trans      &trans        &trans        &trans          &kp HOME        &kp PG_DN       &kp PG_UP      &kp END          &trans  &trans
+                                        &kp LEFT_GUI  &trans        &kp SPACE       &kp ENTER       &mo 3           &kp RIGHT_ALT
       >;
     };
 
     lower {
       bindings = <
-&trans  &kp EXCL  &kp AT  &kp HASH      &kp DLLR  &kp PRCNT    &kp CARET  &kp AMPS   &kp KP_MULTIPLY  &kp LPAR  &kp RPAR  &trans
-&trans  &trans    &trans  &trans        &trans    &trans       &kp MINUS  &kp EQUAL  &kp LBKT         &kp RBKT  &kp BSLH  &kp GRAVE
-&trans  &trans    &trans  &trans        &trans    &trans       &kp UNDER  &kp PLUS   &kp LBRC         &kp RBRC  &kp PIPE  &kp TILDE
-                          &kp LEFT_GUI  &mo 3     &kp SPACE    &kp ENTER  &trans     &kp RIGHT_ALT
+&kp ESC    &kp EXCL  &kp AT  &kp HASH      &kp DLLR  &kp PRCNT    &kp CARET  &kp AMPS   &kp KP_MULTIPLY  &kp LPAR  &kp RPAR  &trans
+&kp LCTRL  &trans    &trans  &trans        &trans    &trans       &kp MINUS  &kp EQUAL  &kp LBKT         &kp RBKT  &kp BSLH  &kp GRAVE
+&kp LALT   &trans    &trans  &trans        &trans    &trans       &kp UNDER  &kp PLUS   &kp LBRC         &kp RBRC  &kp PIPE  &kp TILDE
+                             &kp LEFT_GUI  &mo 3     &kp SPACE    &kp ENTER  &trans     &kp RIGHT_ALT
       >;
     };
 
