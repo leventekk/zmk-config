@@ -108,7 +108,7 @@
 &kp ESC           &kp N1    &kp N2      &kp N3        &kp N4        &kp N5          &kp N6          &kp N7          &kp N8         &kp N9           &kp N0  &trans
 &kp LEFT_CONTROL  &kp K_PP  &kp K_PREV  &kp K_NEXT    &kp K_VOL_DN  &kp K_VOL_UP    &kp LEFT_ARROW  &kp DOWN_ARROW  &kp UP_ARROW   &kp RIGHT_ARROW  &trans  &trans
 &kp LEFT_ALT      &trans    &trans      &trans        &trans        &trans          &kp HOME        &kp PG_DN       &kp PG_UP      &kp END          &trans  &trans
-                                        &kp LEFT_GUI  &trans        &kp SPACE       &kp ENTER       &mo 3           &kp RIGHT_ALT
+                                        &kp LEFT_GUI  &trans        &kp SPACE       &kp ENTER       &trans          &kp RIGHT_ALT
       >;
     };
 
@@ -117,17 +117,26 @@
 &kp ESC    &kp EXCL       &kp AT         &kp HASH      &kp DLLR  &kp PRCNT    &kp CARET  &kp AMPS   &kp KP_MULTIPLY  &kp LPAR  &kp RPAR  &trans
 &kp LCTRL  &prev_desktop  &next_desktop  &trans        &trans    &trans       &kp MINUS  &kp EQUAL  &kp LBKT         &kp RBKT  &kp BSLH  &kp GRAVE
 &kp LALT   &screenshot    &trans         &trans        &trans    &trans       &kp UNDER  &kp PLUS   &kp LBRC         &kp RBRC  &kp PIPE  &kp TILDE
-                                         &kp LEFT_GUI  &mo 3     &kp SPACE    &kp ENTER  &trans     &kp RIGHT_ALT
+                                         &kp LEFT_GUI  &trans    &kp SPACE    &kp ENTER  &trans     &kp RIGHT_ALT
       >;
     };
 
-    both {
+    adjust {
       bindings = <
 &trans  &trans  &trans  &trans  &bt BT_CLR  &bt BT_SEL 0    &bt BT_SEL 3  &trans  &trans  &trans  &rgb_ug RGB_TOG  &rgb_ug RGB_COLOR_HSB(0,60,50)
 &trans  &trans  &trans  &trans  &trans      &bt BT_SEL 1    &bt BT_SEL 4  &trans  &trans  &trans  &bl BL_TOG       &rgb_ug RGB_COLOR_HSB(120,60,50)
 &trans  &trans  &trans  &trans  &trans      &bt BT_SEL 2    &trans        &trans  &trans  &trans  &bl BL_CYCLE     &rgb_ug RGB_COLOR_HSB(240,60,50)
                         &trans  &trans      &trans          &trans        &trans  &trans
       >;
+    };
+  };
+
+  conditional_layers {
+    compatible = "zmk,conditional-layers";
+
+    adjust_layer {
+      if-layers = <1 2>;
+      then-layer = <3>;
     };
   };
 };
