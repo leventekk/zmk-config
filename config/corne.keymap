@@ -48,27 +48,23 @@
       compatible = "zmk,behavior-macro";
       #binding-cells = <0>;
       bindings =
-        <&macro_press &kp LGUI>,
-        <&macro_tap &kp LSHIFT>,
-        <&macro_release &kp NUMBER_4>;
+        <&macro_press>,
+        <&kp LGUI &kp LSHIFT &kp NUMBER_4>,
+        <&macro_release>;
 
       label = "SCREENSHOT";
     };
     next_desktop: next_desktop {
       compatible = "zmk,behavior-macro";
       #binding-cells = <0>;
-      bindings =
-        <&macro_press &kp LCTRL>,
-        <&macro_release &kp RIGHT_ARROW>;
+      bindings = <&macro_press>, <&kp LCTRL &kp RIGHT_ARROW>, <&macro_release>;
 
       label = "NEXT_DESKTOP";
     };
     prev_desktop: prev_desktop {
       compatible = "zmk,behavior-macro";
       #binding-cells = <0>;
-      bindings =
-        <&macro_press &kp LCTRL>,
-        <&macro_release &kp LEFT_ARROW>;
+      bindings = <&macro_press>, <&kp LCTRL &kp LEFT_ARROW>, <&macro_release>;
 
       label = "PREV_DESKTOP";
     };
