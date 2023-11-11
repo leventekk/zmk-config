@@ -60,12 +60,9 @@
       compatible = "zmk,behavior-macro";
       #binding-cells = <0>;
       bindings =
-        <&macro_press>,
-        <&kp LGUI>,
-        <&macro_tap>,
-        <&kp LSHIFT>,
-        <&macro_release>,
-        <&kp NUMBER_4>;
+        <&macro_press &kp LGUI>,
+        <&macro_tap &kp LSHIFT>,
+        <&macro_release &kp NUMBER_4>;
 
       label = "SCREENSHOT";
     };
@@ -73,10 +70,8 @@
       compatible = "zmk,behavior-macro";
       #binding-cells = <0>;
       bindings =
-        <&macro_press>,
-        <&kp LCTRL>,
-        <&macro_release>,
-        <&kp RIGHT_ARROW>;
+        <&macro_press &kp LCTRL>,
+        <&macro_release &kp RIGHT_ARROW>;
 
       label = "NEXT_DESKTOP";
     };
@@ -84,10 +79,8 @@
       compatible = "zmk,behavior-macro";
       #binding-cells = <0>;
       bindings =
-        <&macro_press>,
-        <&kp LCTRL>,
-        <&macro_release>,
-        <&kp LEFT_ARROW>;
+        <&macro_press &kp LCTRL>,
+        <&macro_release &kp LEFT_ARROW>;
 
       label = "PREV_DESKTOP";
     };
