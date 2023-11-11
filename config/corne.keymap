@@ -61,7 +61,9 @@
       #binding-cells = <0>;
       bindings =
         <&macro_press>,
-        <&kp LGUI &kp LSHIFT>,
+        <&kp LGUI>,
+        <&macro_tap>,
+        <&kp LSHIFT>,
         <&macro_release>,
         <&kp NUMBER_4>;
 
