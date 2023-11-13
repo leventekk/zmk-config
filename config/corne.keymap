@@ -84,10 +84,10 @@
 
     raise {
       bindings = <
-&kp ESC           &kp N1    &kp N2      &kp N3        &kp N4        &kp N5          &kp N6          &kp N7          &kp N8         &kp N9           &kp N0  &trans
-&kp LEFT_CONTROL  &kp K_PP  &kp K_PREV  &kp K_NEXT    &kp K_VOL_DN  &kp K_VOL_UP    &kp LEFT_ARROW  &kp DOWN_ARROW  &kp UP_ARROW   &kp RIGHT_ARROW  &trans  &trans
-&kp LSHFT         &trans    &trans      &trans        &trans        &trans          &kp HOME        &kp PG_DN       &kp PG_UP      &kp END          &trans  &trans
-                                        &kp LEFT_GUI  &trans        &kp SPACE       &kp ENTER       &trans          &kp RIGHT_ALT
+&kp ESC           &kp N1            &kp N2      &kp N3        &kp N4        &kp N5          &kp N6          &kp N7          &kp N8         &kp N9           &kp N0  &trans
+&kp LEFT_CONTROL  &kp C_PLAY_PAUSE  &kp C_PREV  &kp C_NEXT    &kp K_VOL_DN  &kp K_VOL_UP    &kp LEFT_ARROW  &kp DOWN_ARROW  &kp UP_ARROW   &kp RIGHT_ARROW  &trans  &trans
+&kp LSHFT         &trans            &trans      &trans        &trans        &trans          &kp HOME        &kp PG_DN       &kp PG_UP      &kp END          &trans  &trans
+                                                &kp LEFT_GUI  &trans        &kp SPACE       &kp ENTER       &trans          &kp RIGHT_ALT
       >;
     };
 
