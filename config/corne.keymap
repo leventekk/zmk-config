@@ -38,9 +38,9 @@
       compatible = "zmk,behavior-macro";
       #binding-cells = <0>;
       bindings 
-        = <&macro_press &kp LGUI>
-        , <&macro_tap &kp LSHIFT &kp NUMBER_4>
-        , <&macro_release &kp LGUI>
+        = <&macro_press &kp LGUI &kp LSHIFT>
+        , <&macro_tap &kp NUMBER_4>
+        , <&macro_release &kp LGUI &kp LSHIFT>
         ;
 
       label = "SCREENSHOT";
