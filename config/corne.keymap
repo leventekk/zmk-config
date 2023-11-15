@@ -22,24 +22,14 @@
       key-positions = <17 18>;
     };
 
-    delete {
-      bindings = <&kp DEL>;
-      key-positions = <32 33>;
-    };
-
     esc {
       bindings = <&kp ESC>;
       key-positions = <19 20>;
     };
 
-    delete_alt {
+    delete {
       bindings = <&kp DELETE>;
       key-positions = <24 11>;
-    };
-
-    backtick {
-      bindings = <&kp GRAVE>;
-      key-positions = <19 20 40>;
     };
   };
 
@@ -47,24 +37,23 @@
     screenshot: screenshot {
       compatible = "zmk,behavior-macro";
       #binding-cells = <0>;
-      bindings =
-        <&macro_press>,
-        <&kp LGUI &kp LSHIFT &kp NUMBER_4>,
-        <&macro_release>;
+      bindings = <&macro_tap>, <&kp LGUI &kp LSHIFT &kp NUMBER_4>;
 
       label = "SCREENSHOT";
     };
+
     next_desktop: next_desktop {
       compatible = "zmk,behavior-macro";
       #binding-cells = <0>;
-      bindings = <&macro_press>, <&kp LCTRL &kp RIGHT_ARROW>, <&macro_release>;
+      bindings = <&macro_tap>, <&kp LCTRL &kp RIGHT_ARROW>;
 
       label = "NEXT_DESKTOP";
     };
+
     prev_desktop: prev_desktop {
       compatible = "zmk,behavior-macro";
       #binding-cells = <0>;
-      bindings = <&macro_press>, <&kp LCTRL &kp LEFT_ARROW>, <&macro_release>;
+      bindings = <&macro_tap>, <&kp LCTRL &kp LEFT_ARROW>;
 
       label = "PREV_DESKTOP";
     };
