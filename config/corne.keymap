@@ -37,7 +37,11 @@
     screenshot: screenshot {
       compatible = "zmk,behavior-macro";
       #binding-cells = <0>;
-      bindings = <&macro_tap>, <&kp LGUI &kp LSHIFT &kp NUMBER_4>;
+      bindings 
+        = <&macro_press &kp LGUI>
+        , <&macro_tap &kp LSHIFT &kp NUMBER_4>
+        , <&macro_release &kp LGUI>
+        ;
 
       label = "SCREENSHOT";
     };
@@ -45,7 +49,11 @@
     next_desktop: next_desktop {
       compatible = "zmk,behavior-macro";
       #binding-cells = <0>;
-      bindings = <&macro_tap>, <&kp LCTRL &kp RIGHT_ARROW>;
+      bindings 
+        = <&macro_press &kp LCTRL>
+        , <&macro_tap &kp RIGHT_ARROW>
+        , <&macro_release &kp LCTRL>
+        ;
 
       label = "NEXT_DESKTOP";
     };
@@ -53,7 +61,11 @@
     prev_desktop: prev_desktop {
       compatible = "zmk,behavior-macro";
       #binding-cells = <0>;
-      bindings = <&macro_tap>, <&kp LCTRL &kp LEFT_ARROW>;
+      bindings 
+        = <&macro_press &kp LCTRL>
+        , <&macro_tap &kp LEFT_ARROW>
+        , <&macro_release &kp LCTRL>
+        ;
 
       label = "PREV_DESKTOP";
     };
