@@ -37,11 +37,13 @@
     screenshot: screenshot {
       compatible = "zmk,behavior-macro";
       #binding-cells = <0>;
-      bindings 
-        = <&macro_press &kp LGUI &kp LSHIFT>
-        , <&macro_tap &kp NUMBER_4>
-        , <&macro_release &kp LGUI &kp LSHIFT>
-        ;
+      bindings =
+        <&macro_press>,
+        <&kp LGUI &kp LSHIFT>,
+        <&macro_tap>,
+        <&kp NUMBER_4>,
+        <&macro_release>,
+        <&kp LGUI &kp LSHIFT>;
 
       label = "SCREENSHOT";
     };
@@ -49,11 +51,13 @@
     next_desktop: next_desktop {
       compatible = "zmk,behavior-macro";
       #binding-cells = <0>;
-      bindings 
-        = <&macro_press &kp LCTRL>
-        , <&macro_tap &kp RIGHT_ARROW>
-        , <&macro_release &kp LCTRL>
-        ;
+      bindings =
+        <&macro_press>,
+        <&kp LCTRL>,
+        <&macro_tap>,
+        <&kp RIGHT_ARROW>,
+        <&macro_release>,
+        <&kp LCTRL>;
 
       label = "NEXT_DESKTOP";
     };
@@ -61,11 +65,13 @@
     prev_desktop: prev_desktop {
       compatible = "zmk,behavior-macro";
       #binding-cells = <0>;
-      bindings 
-        = <&macro_press &kp LCTRL>
-        , <&macro_tap &kp LEFT_ARROW>
-        , <&macro_release &kp LCTRL>
-        ;
+      bindings =
+        <&macro_press>,
+        <&kp LCTRL>,
+        <&macro_tap>,
+        <&kp LEFT_ARROW>,
+        <&macro_release>,
+        <&kp LCTRL>;
 
       label = "PREV_DESKTOP";
     };
@@ -85,7 +91,7 @@
 
     raise {
       bindings = <
-&kp ESC           &kp N1            &kp N2      &kp N3        &kp N4        &kp N5          &kp N6          &kp N7          &kp N8         &kp N9           &kp N0  &trans
+&kp ESC           &kp N1            &kp N2      &kp N3        &kp N4        &kp N5          &kp N6          &kp N7          &kp N8         &kp N9           &kp N0  &kp DEL
 &kp LEFT_CONTROL  &kp C_PLAY_PAUSE  &kp C_PREV  &kp C_NEXT    &kp K_VOL_DN  &kp K_VOL_UP    &kp LEFT_ARROW  &kp DOWN_ARROW  &kp UP_ARROW   &kp RIGHT_ARROW  &trans  &trans
 &kp LSHFT         &trans            &trans      &trans        &trans        &trans          &kp HOME        &kp PG_DN       &kp PG_UP      &kp END          &trans  &trans
                                                 &kp LEFT_GUI  &trans        &kp SPACE       &kp ENTER       &trans          &kp RIGHT_ALT
