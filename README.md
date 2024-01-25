@@ -7,4 +7,3 @@
 ![Raise layer](assets/raise.png)
 
 ![Third layer](assets/both.png)
-
