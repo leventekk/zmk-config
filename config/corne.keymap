@@ -11,10 +11,6 @@
 // dt-formatter: indent = "  "
 // dt-formatter: reindentMultilineIntegerCells = "dedent"
 
-// home row mods macros
-#define LHRM(k1, k2, k3, k4) &lhmr LCTRL k1  &lhmr LALT k2  &lhmr LGUI k3  &lhmr LSHIFT k4
-#define RHRM(k1, k2, k3, k4) &rhmr RSHIFT k1  &rhmr RGUI k2  &rhmr RALT k3  &rhmr RCTRL k4
-
 #define LOWER  1
 #define RAISE  2
 #define ADJUST 3
@@ -120,19 +116,19 @@
 
     base {
       bindings = <
-    //╭──────────┬──────────┬──────────┬──────────┬───────────┬──────────╮    ╭──────────┬───────────┬──────────┬──────────┬──────────┬──────────╮
-    //│  TAB     │  Q       │  W       │  E       │  R        │  T       │    │  Y       │  U        │  I       │  O       │  P       │BACKSPACE │
-        &kp TAB    &kp Q       &kp W     &kp E      &kp R       &kp T           &kp Y      &kp U       &kp I      &kp O      &kp P      &kp BSPC
-    //├──────────┼──────────┼──────────┼──────────┼───────────┼──────────┤    ├──────────┼───────────┼──────────┼──────────┼──────────┼──────────┤
-    //│  CTRL    │  A       │  S       │  D       │  F        │  G       │    │  H       │  J        │  K       │  L       │  ;       │  "       │
-        &kp LCTRL  LHRM(A,     S,         D,         F)        &kp G           &kp H       RHRM(J,      K,         L,         SEMI)     &kp APOS
-    //├──────────┼──────────┼──────────┼──────────┼───────────┼──────────┤    ├──────────┼───────────┼──────────┼──────────┼──────────┼──────────┤
-    //│  SHIFT   │  Z       │  X       │  C       │  V        │  B       │    │  N       │  M        │  ,       │  .       │  /       │  SHIFT   │
-        &kp LSHFT  &kp Z      &kp X      &kp C      &kp V      &kp B            &kp N      &kp M       &kp COMMA  &kp DOT    &kp FSLH  &kp RSHIFT
-    //╰──────────┴──────────┴──────────┼──────────┼───────────┼──────────┤    ┤──────────┼───────────┼──────────┼──────────┴──────────┴──────────╯
-    //                                 │  CMD     │  RAISE    │  SPACE   │    │  ENTER   │  LOWER    │  ALT     │
-                                          &kp LGUI   &mo RAISE  &kp SPACE        &kp RET    &mo LOWER   &kp RALT
-    //                                 ╰──────────┴───────────┴──────────╯    ╰──────────┴───────────┴──────────╯
+    //╭──────────┬───────────────┬──────────────┬──────────────┬────────────────┬──────────╮    ╭──────────┬───────────────┬─────────────┬─────────────┬──────────────────┬──────────╮
+    //│  TAB     │  Q            │  W           │  E           │  R             │  T       │    │  Y       │  U            │  I          │  O          │  P               │BACKSPACE │
+        &kp TAB    &kp Q           &kp W         &kp E          &kp R             &kp T           &kp Y      &kp U           &kp I         &kp O         &kp P              &kp BSPC
+    //├──────────┼───────────────┼──────────────┼──────────────┼────────────────┼──────────┤    ├──────────┼───────────────┼─────────────┼─────────────┼──────────────────┼──────────┤
+    //│  CTRL    │  A            │  S           │  D           │  F             │  G       │    │  H       │  J            │  K          │  L          │  ;               │  "       │
+        &kp LCTRL  &lhmr LCTRL A   &lhmr LALT S   &lhmr LGUI D   &lhmr LSHIFT F   &kp G           &kp H      &rhmr RSHIFT J  &rhmr RGUI K  &rhmr RALT L  &rhmr LCTRL SEMI   &kp APOS
+    //├──────────┼───────────────┼──────────────┼──────────────┼────────────────┼──────────┤    ├──────────┼───────────────┼─────────────┼─────────────┼──────────────────┼──────────┤
+    //│  SHIFT   │  Z            │  X           │  C           │  V             │  B       │    │  N       │  M            │  ,          │  .          │  /               │  SHIFT   │
+        &kp LSHFT  &kp Z           &kp X          &kp C          &kp V            &kp B            &kp N      &kp M          &kp COMMA     &kp DOT       &kp FSLH          &kp RSHIFT
+    //╰──────────┴───────────────┴──────────────┼──────────────┼────────────────┼──────────┤    ┤──────────┼───────────────┼─────────────┼─────────────┴──────────────────┴──────────╯
+    //                                          │  CMD         │  RAISE         │  SPACE   │    │  ENTER   │  LOWER        │  ALT        │
+                                                   &kp LGUI      &mo RAISE        &kp SPACE        &kp RET    &mo LOWER      &kp RALT
+    //                                          ╰──────────────┴────────────────┴──────────╯    ╰──────────┴───────────────┴─────────────╯
       >;
     };
 
