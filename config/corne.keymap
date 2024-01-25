@@ -106,6 +106,15 @@
     };
   };
 
+  conditional_layers {
+    compatible = "zmk,conditional-layers";
+
+    adjust_layer {
+      if-layers = <LOWER RAISE>;
+      then-layer = <ADJUST>;
+    };
+  };
+
   keymap {
     compatible = "zmk,keymap";
 
@@ -122,7 +131,7 @@
         &kp LSHFT  &kp Z      &kp X      &kp C      &kp V      &kp B            &kp N      &kp M       &kp COMMA  &kp DOT    &kp FSLH  &kp RSHIFT
     //╰──────────┴──────────┴──────────┼──────────┼───────────┼──────────┤    ┤──────────┼───────────┼──────────┼──────────┴──────────┴──────────╯
     //                                 │  CMD     │  RAISE    │  SPACE   │    │  ENTER   │  LOWER    │  ALT     │
-                                          &kp LGUI   &lt RAISE  &kp SPACE        &kp RET    &lt LOWER   &kp RALT
+                                          &kp LGUI   &mo RAISE  &kp SPACE        &kp RET    &mo LOWER   &kp RALT
     //                                 ╰──────────┴───────────┴──────────╯    ╰──────────┴───────────┴──────────╯
       >;
     };
@@ -177,16 +186,7 @@
     //                                 ╰──────────┴───────────────┴──────────────╯    ╰─────────────┴──────────┴──────────╯
       >;
     };
-  };
-
-  conditional_layers {
-    compatible = "zmk,conditional-layers";
-
-    adjust_layer {
-      if-layers = <LOWER RAISE>;
-      then-layer = <ADJUST>;
-    };
-  };
+  }; 
 };
 
 /* vim: set ft=c tw=174: */
