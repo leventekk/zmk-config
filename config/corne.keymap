@@ -5,10 +5,8 @@
  */
 
 #include <behaviors.dtsi>
-#include <dt-bindings/zmk/backlight.h>
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
-#include <dt-bindings/zmk/rgb.h>
 
 // dt-formatter: indent = "  "
 // dt-formatter: reindentMultilineIntegerCells = "dedent"
@@ -126,13 +124,13 @@
         &kp TAB    &kp Q       &kp W     &kp E      &kp R       &kp T           &kp Y      &kp U       &kp I      &kp O      &kp P      &kp BSPC
     //├──────────┼──────────┼──────────┼──────────┼───────────┼──────────┤    ├──────────┼───────────┼──────────┼──────────┼──────────┼──────────┤
     //│  CTRL    │  A       │  S       │  D       │  F        │  G       │    │  H       │  J        │  K       │  L       │  ;       │  "       │
-        &kp LCTRL  LHRM(A,     S,         D,         F)        &kp G           &kp H       RHRM(J,     K,         L,         SEMI)     &kp APOS
+        &kp LCTRL  LHRM(A,     S,         D,         F)        &kp G           &kp H       RHRM(J,      K,         L,         SEMI)     &kp APOS
     //├──────────┼──────────┼──────────┼──────────┼───────────┼──────────┤    ├──────────┼───────────┼──────────┼──────────┼──────────┼──────────┤
     //│  SHIFT   │  Z       │  X       │  C       │  V        │  B       │    │  N       │  M        │  ,       │  .       │  /       │  SHIFT   │
         &kp LSHFT  &kp Z      &kp X      &kp C      &kp V      &kp B            &kp N      &kp M       &kp COMMA  &kp DOT    &kp FSLH  &kp RSHIFT
     //╰──────────┴──────────┴──────────┼──────────┼───────────┼──────────┤    ┤──────────┼───────────┼──────────┼──────────┴──────────┴──────────╯
     //                                 │  CMD     │  RAISE    │  SPACE   │    │  ENTER   │  LOWER    │  ALT     │
-                                          &kp LGUI   &mo RAISE  &kp SPACE        &kp RET    &mo LOWER   &kp RALT
+                                          &kp LGUI   &lt RAISE  &kp SPACE        &kp RET    &lt LOWER   &kp RALT
     //                                 ╰──────────┴───────────┴──────────╯    ╰──────────┴───────────┴──────────╯
       >;
     };
