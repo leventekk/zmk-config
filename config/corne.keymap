@@ -53,8 +53,6 @@
         <&kp N4>,
         <&macro_release>,
         <&kp LGUI &kp LSHIFT>;
-
-      label = "SCREENSHOT";
     };
 
     next_desktop: next_desktop {
@@ -67,8 +65,6 @@
         <&kp RIGHT>,
         <&macro_release>,
         <&kp LCTRL>;
-
-      label = "NEXT_DESKTOP";
     };
 
     prev_desktop: prev_desktop {
@@ -81,15 +77,12 @@
         <&kp LEFT>,
         <&macro_release>,
         <&kp LCTRL>;
-
-      label = "PREV_DESKTOP";
     };
   };
 
   behaviors {
     rhmr: rhmr {
       compatible = "zmk,behavior-hold-tap";
-      label = "RIGHT_HOMEROW";
       bindings = <&kp>, <&kp>;
 
       #binding-cells = <2>;
@@ -102,7 +95,6 @@
 
     lhmr: lhmr {
       compatible = "zmk,behavior-hold-tap";
-      label = "LEFT HOMEROW";
       bindings = <&kp>, <&kp>;
 
       #binding-cells = <2>;
@@ -162,7 +154,7 @@
         &trans     &kp DEL    &kp CAPS   &trans       &trans         &trans          &kp LEFT   &kp DOWN   &kp UP       &kp RIGHT  &trans     &trans
     //├──────────┼──────────┼──────────┼────────────┼──────────────┼──────────┤    ├──────────┼──────────┼────────────┼──────────┼──────────┼──────────┤
     //│          │          │          │ COPY       │ PASTE        │          │    │  HOME    │  PG DOWN │  PG UP     │  END     │          │          │
-        &trans     &trans     &trans     &kp K_COPY     &kp K_PASTE  &trans          &kp HOME   &kp PG_DN   &kp PG_UP    &kp END   &trans     &trans
+        &trans     &trans     &trans     &kp K_COPY     &kp K_PASTE  &trans          &kp HOME   &kp PG_DN   &kp PG_UP   &kp END    &trans     &trans
     //╰──────────┴──────────┴──────────┼────────────┼──────────────┼──────────┤    ┤──────────┼──────────┼────────────┼──────────┴──────────┴──────────╯
                                          &trans       &trans         &trans          &trans     &trans     &trans
     //                                 ╰────────────┴──────────────┴──────────╯    ╰──────────┴──────────┴────────────╯
@@ -179,7 +171,7 @@
         &trans     &trans     &trans     &trans     &prev_desktop   &next_desktop       &bt BT_SEL 1  &trans     &trans     &kp C_VOL_DN  &kp C_VOL_UP  &trans
     //├──────────┼──────────┼──────────┼──────────┼───────────────┼──────────────┤    ├─────────────┼──────────┼──────────┼─────────────┼─────────────┼──────────┤
     //│          │          │          │          │               │ SCREENSHOT   │    │ CLEAR BT    │          │          │ MUTE        │ PLAY_PAUSE  │          │
-        &trans     &trans     &trans     &trans     &trans          &screenshot         &BT_CLR       &trans     &trans     &kp C_MUTE    &kp C_PP      &trans
+        &trans     &trans     &trans     &trans     &trans          &screenshot         &bt BT_CLR    &trans     &trans     &kp C_MUTE    &kp C_PP      &trans
     //╰──────────┴──────────┴──────────┼──────────┼───────────────┼──────────────┤    ┤─────────────┼──────────┼──────────┼─────────────┴─────────────┴──────────╯
                                          &trans     &trans          &trans              &trans        &trans     &trans
     //                                 ╰──────────┴───────────────┴──────────────╯    ╰─────────────┴──────────┴──────────╯
