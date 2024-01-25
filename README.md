@@ -6,4 +6,4 @@
 
 ![Raise layer](assets/raise.png)
 
-![Third layer](assets/both.png)
+![Adjust layer](assets/adjust.png)
