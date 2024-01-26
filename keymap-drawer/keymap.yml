@@ -1,0 +1,181 @@
+layout: { qmk_keyboard: corne_rotated, qmk_layout: LAYOUT_split_3x6_3 }
+layers:
+  base:
+    - $$mdi:keyboard-tab$$
+    - Q
+    - W
+    - E
+    - R
+    - T
+    - Y
+    - U
+    - I
+    - O
+    - P
+    - $$mdi:backspace-outline$$
+    - $$mdi:apple-keyboard-control$$
+    - { t: A, h: $$mdi:apple-keyboard-control$$ }
+    - { t: S, h: $$mdi:apple-keyboard-option$$ }
+    - { t: D, h: $$mdi:apple-keyboard-command$$ }
+    - { t: F, h: $$mdi:apple-keyboard-shift$$ }
+    - G
+    - H
+    - { t: J, h: $$mdi:apple-keyboard-shift$$ }
+    - { t: K, h: $$mdi:apple-keyboard-command$$ }
+    - { t: L, h: $$mdi:apple-keyboard-option$$ }
+    - { t: ;, h: $$mdi:apple-keyboard-control$$ }
+    - "'"
+    - $$mdi:apple-keyboard-shift$$
+    - Z
+    - X
+    - C
+    - V
+    - B
+    - N
+    - M
+    - ","
+    - .
+    - /
+    - $$mdi:apple-keyboard-shift$$
+    - $$mdi:apple-keyboard-command$$
+    - $$mdi:arrow-up-bold$$
+    - $$mdi:keyboard-space$$
+    - $$mdi:keyboard-return$$
+    - $$mdi:arrow-down-bold$$
+    - $$mdi:apple-keyboard-option$$
+  lower:
+    - { t: ▽, type: trans }
+    - "!"
+    - "@"
+    - "#"
+    - $
+    - "%"
+    - ^
+    - "&"
+    - "*"
+    - "`"
+    - "~"
+    - { t: ▽, type: trans }
+    - { t: ▽, type: trans }
+    - '"'
+    - "["
+    - "{"
+    - (
+    - { t: ▽, type: trans }
+    - /
+    - "-"
+    - "="
+    - ":"
+    - ;
+    - { t: ▽, type: trans }
+    - { t: ▽, type: trans }
+    - "'"
+    - "]"
+    - "}"
+    - )
+    - { t: ▽, type: trans }
+    - \
+    - _
+    - +
+    - "|"
+    - "?"
+    - { t: ▽, type: trans }
+    - { t: ▽, type: trans }
+    - { t: ▽, type: trans }
+    - { t: ▽, type: trans }
+    - { t: ▽, type: trans }
+    - { type: held }
+    - { t: ▽, type: trans }
+  raise:
+    - { t: ▽, type: trans }
+    - "1"
+    - "2"
+    - "3"
+    - "4"
+    - "5"
+    - "6"
+    - "7"
+    - "8"
+    - "9"
+    - "0"
+    - { t: ▽, type: trans }
+    - { t: ▽, type: trans }
+    - $$mdi:backspace-reverse-outline$$
+    - $$mdi:apple-keyboard-caps$$
+    - { t: ▽, type: trans }
+    - { t: ▽, type: trans }
+    - { t: ▽, type: trans }
+    - $$mdi:arrow-left$$
+    - $$mdi:arrow-down$$
+    - $$mdi:arrow-up$$
+    - $$mdi:arrow-right$$
+    - { t: ▽, type: trans }
+    - { t: ▽, type: trans }
+    - { t: ▽, type: trans }
+    - { t: ▽, type: trans }
+    - { t: ▽, type: trans }
+    - { t: ▽, type: trans }
+    - { t: ▽, type: trans }
+    - { t: ▽, type: trans }
+    - $$mdi:arrow-expand-up$$
+    - $$mdi:chevron-double-down$$
+    - $$mdi:chevron-double-up$$
+    - $$mdi:arrow-expand-down$$
+    - { t: ▽, type: trans }
+    - { t: ▽, type: trans }
+    - { t: ▽, type: trans }
+    - { type: held }
+    - { t: ▽, type: trans }
+    - { t: ▽, type: trans }
+    - { t: ▽, type: trans }
+    - { t: ▽, type: trans }
+  adjust:
+    - { t: ▽, type: trans }
+    - { t: ▽, type: trans }
+    - { t: ▽, type: trans }
+    - { t: ▽, type: trans }
+    - { t: ▽, type: trans }
+    - { t: ▽, type: trans }
+    - { t: $$mdi:bluetooth$$, h: 1 }
+    - { t: ▽, type: trans }
+    - { t: ▽, type: trans }
+    - $$mdi:skip-previous$$
+    - $$mdi:skip-next$$
+    - { t: ▽, type: trans }
+    - { t: ▽, type: trans }
+    - { t: ▽, type: trans }
+    - { t: ▽, type: trans }
+    - { t: ▽, type: trans }
+    - $$mdi:arrow-left-bold-box$$
+    - $$mdi:arrow-right-bold-box$$
+    - { t: $$mdi:bluetooth$$, h: 2 }
+    - { t: ▽, type: trans }
+    - { t: ▽, type: trans }
+    - $$mdi:volume-minus$$
+    - $$mdi:volume-plus$$
+    - { t: ▽, type: trans }
+    - { t: ▽, type: trans }
+    - { t: ▽, type: trans }
+    - { t: ▽, type: trans }
+    - { t: ▽, type: trans }
+    - { t: ▽, type: trans }
+    - $$mdi:monitor-screenshot$$
+    - { t: $$mdi:bluetooth$$, h: clear }
+    - { t: ▽, type: trans }
+    - { t: ▽, type: trans }
+    - $$mdi:volume-mute$$
+    - $$mdi:play-pause$$
+    - { t: ▽, type: trans }
+    - { t: ▽, type: trans }
+    - { type: held }
+    - { t: ▽, type: trans }
+    - { t: ▽, type: trans }
+    - { type: held }
+    - { t: ▽, type: trans }
+combos:
+  - p: [17, 18]
+    k: $$mdi:apple-keyboard-caps$$
+  - p: [19, 20]
+    k: $$mdi:keyboard-esc$$
+draw_config:
+  glyph_tap_size: 18

@@ -7,3 +7,5 @@
 ![Raise layer](assets/raise.png)
 
 ![Adjust layer](assets/adjust.png)
+
+![Full layout](assets/keymap.svg)
