@@ -9,3 +9,11 @@
 ![Adjust layer](assets/adjust.png)
 
 ![Full layout](assets/keymap.svg)
+
+## Commands
+
+For building the firmware, run the following command:
+
+```sh
+make
+```
